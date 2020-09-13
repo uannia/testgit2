@@ -27,6 +27,14 @@ public class AdHolderOnline extends DialogUntil {
 
 
 
+
+
+
+
+
+
+
+
     public void setDebugMode(boolean isDebug) {	
         Constants.isDebugMode = isDebug;
     }
