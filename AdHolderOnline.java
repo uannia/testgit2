@@ -1,24 +1,6 @@
 
 
-import androidx.annotation.NonNull;
-import androidx.lifecycle.Lifecycle;
-import androidx.lifecycle.LifecycleEventObserver;
-import androidx.lifecycle.LifecycleOwner;
 
-import com.adconfigonline.admob.AdmobHolder;
-import com.adconfigonline.cross.CrossHolder;
-import com.adconfigonline.facebook.FBHolder;
-import com.adconfigonline.server.AdsChild;
-import com.adconfigonline.server.LoadData;
-import com.adconfigonline.untils.AdConstant;
-import com.adconfigonline.untils.AdDef;
-import com.adconfigonline.untils.CheckInternetConnection;
-import com.adconfigonline.untils.Constants;
-import com.adconfigonline.untils.DialogUntil;
-import com.adconfigonline.untils.TestAd;
-
-import java.util.HashMap;
-import java.util.Stack;
 
 public class AdHolderOnline extends DialogUntil {
 
