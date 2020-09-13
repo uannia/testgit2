@@ -17,8 +17,6 @@ public class AdHolderOnline extends DialogUntil {
         Constants.map = mapAd;
     }
 
-    private Activity activity;
-
     public interface AdHolderCallback {
         void onAdShow(@AdDef.NETWORK String network, @AdDef.AD_TYPE String adtype);
 
