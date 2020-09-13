@@ -1,5 +1,10 @@
 
 
+import androidx.annotation.NonNull;
+import androidx.lifecycle.Lifecycle;
+import androidx.lifecycle.LifecycleEventObserver;
+import androidx.lifecycle.LifecycleOwner;
+
 import com.adconfigonline.admob.AdmobHolder;
 import com.adconfigonline.cross.CrossHolder;
 import com.adconfigonline.facebook.FBHolder;
@@ -14,6 +19,7 @@ import com.adconfigonline.untils.TestAd;
 
 import java.util.HashMap;
 import java.util.Stack;
+
 
 public class AdHolderOnline extends DialogUntil {
 
@@ -34,16 +40,9 @@ public class AdHolderOnline extends DialogUntil {
 
 
 
-
-    public void setDebugMode(boolean isDebug) {	
-        Constants.isDebugMode = isDebug;
-    }
-
     public void setListAd(HashMap<String, Stack<AdsChild>> mapAd) {
         Constants.map = mapAd;
     }
-
-    private Activity activity;
 
     public interface AdHolderCallback {
         void onAdShow(@AdDef.NETWORK String network, @AdDef.AD_TYPE String adtype);
