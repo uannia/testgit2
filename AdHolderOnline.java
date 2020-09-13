@@ -13,11 +13,6 @@ public class AdHolderOnline extends DialogUntil {
 
 
 
-
-    public void setDebugMode(boolean isDebug) {	
-        Constants.isDebugMode = isDebug;
-    }
-
     public void setListAd(HashMap<String, Stack<AdsChild>> mapAd) {
         Constants.map = mapAd;
     }
